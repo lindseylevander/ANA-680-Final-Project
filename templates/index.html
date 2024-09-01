@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> <title>Gaming Engagement Prediction</title> 
+</head> 
+
+<body> 
+<form action="/predict" autocomplete="on" method="POST"> 
+    Sessions per week: <input type="number" name="SessionsPerWeek"><br> 
+    Average session duration (min): <input type="number" name="AvgSessionDurationMinutes"><br> 
+    Player level: <input type="number" name="PlayerLevel"><br> 
+    Achievements unlocked: <input type="number" name="AchievementsUnlocked"><br> 
+ <button type="submit">Predict</button> 
+</form> 
+
+<p>My prediction: {{ prediction }}</p> 
+</body> 
+</html>
